@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Contact - Galactic Network
+		</title>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >		
+		<link rel="shortcut icon" href="imgs/icon.png">
+		<link rel="stylesheet" type="text/css" href="site.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				// Easy way of adding the CSS class blink to any A tag.
+				$("a").addClass( "blink" );
+				
+				// Sound effects on hover of A tags
+				var audio = $("#hover_snd")[0];
+				$("a").mouseenter(function() {
+				  audio.play();
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<audio id="hover_snd">
+			<source src="snds/146725__fins__laser.wav">
+			Your browser isn't supporting fun audio time.
+		</audio>
+		
+		<img alt="" id="background_img" src="imgs/background.jpg">
+		<div id="container">
+			
+			<div id="header">
+				<p class="header_logo1">
+					The Galactic Network
+				</p>
+				<p class="header_logo2">
+					Boldly hosting your content in cyberspace
+				</p>
+				<p>
+					<a href="index.html" class="btn_home">Homepage</a> <a href="web_design.html" class="btn">Web Designing</a> <a href="hosting.html" class="btn">Hosting on the Cheap</a> <a href="vms.html" class="btn">Virtual Server Rentals</a>
+				</p>
+			</div>
+			
+			<div id="content">
+				<div class="article_background">
+					<p>
+						You can contact us using the methods below<br>
+						<ul style="list-style-type:disc">
+						  <li><img alt="" src="imgs/contact_phone.png"> Phone: Galaxy 1, Quadrant 4, System 34, 9,993,123,675,221</li>
+						  <li><img alt="" style="width: 32px; height: 32px;" src="imgs/contact_icon.png"> E-Mail: <a href="mailto:Sales@GN.Net">Sales@GN.Net</a></li>
+						  <li><img alt="" style="width: 32px; height: 32px;" src="imgs/tele-presence.png"> VR: Virtual Tele-Presence available using above phone number</li>
+						</ul>
+						
+						<form action="email_sub.php" method="POST" novalidate target="#">
+							Send us an email:<br>
+							<label>Name: </label><input type="text" name="name" value="Peon"><br>
+							<label>Contact: </label><input type="text" name="contact_number" value=""><br>
+							<textarea rows="10" cols="80"></textarea><br>
+							<button type="submit">Send</button><br><br>
+							
+						</form>
+					</p>
+				</div>
+				
+			</div>
+			
+			<div id="footer">
+				<table>
+					<tr>
+						<td colspan="3">
+							The Galactic Network site index
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html">Homepage</a>
+						</td>
+						<td>
+							<a href="web_design.html">Web Designing</a><br>
+							<a href="hosting.html">Hosting on the cheap</a><br>
+							<a href="vms.html">Virtual Servers rentals</a>
+						</td>
+						<td>
+							<a href="about.html">About Us</a><br>
+							<a href="contact.html">Contact the Company</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p id="copyright">Copyright &copy;1337 | All Imperial rights granted</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	
+</html>

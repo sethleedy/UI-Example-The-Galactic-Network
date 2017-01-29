@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			About - Galactic Network
+		</title>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<link rel="shortcut icon" href="imgs/icon.png">
+		<link rel="stylesheet" type="text/css" href="site.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				// Easy way of adding the CSS class blink to any A tag.
+				$("a").addClass( "blink" );
+				
+				// Sound effects on hover of A tags
+				var audio = $("#hover_snd")[0];
+				$("a").mouseenter(function() {
+				  audio.play();
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<audio id="hover_snd">
+			<source src="snds/146725__fins__laser.wav">
+			Your browser isn't supporting fun audio time.
+		</audio>
+		
+		<img alt="" id="background_img" src="imgs/background.jpg">
+		<div id="container">
+			
+			<div id="header">
+				<p class="header_logo1">
+					The Galactic Network
+				</p>
+				<p class="header_logo2">
+					Boldly hosting your content in cyberspace
+				</p>
+				<p>
+					<a href="index.html" class="btn_home">Homepage</a> <a href="web_design.html" class="btn">Web Designing</a> <a href="hosting.html" class="btn">Hosting on the Cheap</a> <a href="vms.html" class="btn">Virtual Server Rentals</a>
+				</p>
+			</div>
+			
+			<div id="content">
+				<div class="article_background">
+					<p>
+						This company started on one of the spaceships leaving Earth in 2015 A.D&lt;- Old calendar system) meeting the needs of the passengers on-board. We survived and thrived after planet-fall.
+					</p>
+					<p>
+						Our code technicians are highly valued and are essential to our company's progress. As such, all personal are required to have over 50 years experience in technology to be employed here.<br>
+						 This creates a wonderful environment, full of mature & knowledgeable people, to service you.
+					</p>
+				</div>
+				<table>
+					<tr>
+						<td>
+							Leaving Earth
+						</td>
+						<td>
+							Planet-fall
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align: top;"><img alt="" style="width: 350px; height: 350px;" src="imgs/Leaving-Earth.jpg"></td>
+						<td style="vertical-align: top;"><img alt="" style="width: 350px; height: 350px;" src="imgs/planet-fall.jpg"></td>
+					</tr>
+				</table>
+				
+			</div>
+			
+			<div id="footer">
+				<table>
+					<tr>
+						<td colspan="3">
+							The Galactic Network site index
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html">Homepage</a>
+						</td>
+						<td>
+							<a href="web_design.html">Web Designing</a><br>
+							<a href="hosting.html">Hosting on the cheap</a><br>
+							<a href="vms.html">Virtual Servers rentals</a>
+						</td>
+						<td>
+							<a href="about.html">About Us</a><br>
+							<a href="contact.html">Contact the Company</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p id="copyright">Copyright &copy;1337 | All Imperial rights granted</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Homepage - Galactic Network
+		</title>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<link rel="shortcut icon" href="imgs/icon.png">
+		<link rel="stylesheet" type="text/css" href="site.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				// Easy way of adding the CSS class blink to any A tag.
+				$("a").addClass("blink");
+				
+				// Sound effects on hover of A tags
+				var audio = $("#hover_snd")[0];
+				$("a").mouseenter(function() {
+				  audio.play();
+				});
+			});
+		</script>
+		<style>
+			.rainbow {
+				background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+				
+				background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+				
+				color: transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+				font-family: 'JellyBean', Fallback, sans-serif;;
+			}
+			
+			#bad_design img  {
+				width: 350px;
+				height: 350px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<audio id="hover_snd">
+			<source src="snds/146725__fins__laser.wav">
+			Your browser isn't supporting fun audio time.
+		</audio>
+		
+		<img alt="" id="background_img" src="imgs/background.jpg">
+		<div id="container">
+			
+			<div id="header">
+				<p class="header_logo1">
+					The Galactic Network
+				</p>
+				<p class="header_logo2">
+					Boldly hosting your content in cyberspace
+				</p>
+				<p>
+					<a href="index.html" class="btn_home">Homepage</a> <a href="web_design.html" class="btn">Web Designing</a> <a href="hosting.html" class="btn">Hosting on the Cheap</a> <a href="vms.html" class="btn">Virtual Server Rentals</a>
+				</p>
+			</div>
+			
+			<div id="content">
+				<div class="article_background">
+					<p>
+						Welcome to our website where we are proud to offer you hosting in the core of the galaxy.
+					</p>
+					<p>
+						Our services have been around since we all left Earth and have only improved with time!<br>Check out our offers and contact us for any questions.
+					</p>
+				</div>
+				
+				<div class="article_background">				
+					<p id="bad_design" class="rainbow">
+						Is your website designed crazily ?<br>
+						Please check us out. We can improve existing sites!<br><br>
+						Don't let your site end up like this section or the below image<br>
+						<img alt="" src="imgs/bad-website-4-622x415.jpg">
+					<p>
+				</div>
+				
+			</div>
+			
+			<div id="footer">
+				<table>
+					<tr>
+						<td colspan="3">
+							The Galactic Network site index
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html">Homepage</a>
+						</td>
+						<td>
+							<a href="web_design.html">Web Designing</a><br>
+							<a href="hosting.html">Hosting on the cheap</a><br>
+							<a href="vms.html">Virtual Servers rentals</a>
+						</td>
+						<td>
+							<a href="about.html">About Us</a><br>
+							<a href="contact.html">Contact the Company</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p id="copyright">Copyright &copy;1337 | All Imperial rights granted</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	
+</html>

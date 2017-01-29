@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Template - Galactic Network
+		</title>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<link rel="shortcut icon" href="imgs/icon.png">
+		<link rel="stylesheet" type="text/css" href="site.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function() {
+				// Easy way of adding the CSS class blink to any A tag.
+				$("a").addClass( "blink" );
+				
+				// Sound effects on hover of A tags
+				var audio = $("#hover_snd")[0];
+				$("a").mouseenter(function() {
+				  audio.play();
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<audio id="hover_snd">
+			<source src="snds/146725__fins__laser.wav">
+			Your browser isn't supporting fun audio time.
+		</audio>
+		
+		<img alt="" id="background_img" src="imgs/background.jpg">
+		<div id="container">
+			
+			<div id="header">
+				<p class="header_logo1">
+					The Galactic Network
+				</p>
+				<p class="header_logo2">
+					Boldly hosting your content in cyberspace
+				</p>
+				<p>
+					<a href="index.html" class="btn_home">Homepage</a> <a href="web_design.html" class="btn">Web Designing</a> <a href="hosting.html" class="btn">Hosting on the Cheap</a> <a href="vms.html" class="btn">Virtual Server Rentals</a>
+				</p>
+			</div>
+			
+			<div id="content">
+				<div class="article_background">
+					<p>
+						Article content here<br>
+						Fullfilling article ?
+					</p>
+				</div>
+				
+			</div>
+			
+			<div id="footer">
+				<table>
+					<tr>
+						<td colspan="3">
+							The Galactic Network site index
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html">Homepage</a>
+						</td>
+						<td>
+							<a href="web_design.html">Web Designing</a><br>
+							<a href="hosting.html">Hosting on the cheap</a><br>
+							<a href="vms.html">Virtual Servers rentals</a>
+						</td>
+						<td>
+							<a href="about.html">About Us</a><br>
+							<a href="contact.html">Contact the Company</a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p id="copyright">Copyright &copy;1337 | All Imperial rights granted</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+	
+</html>
